@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "vite",
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview"
   },
@@ -23,7 +23,10 @@
   },
   "dependencies": {
     "@solidjs/router": "^0.8.2",
+    "apexcharts": "^3.40.0",
+    "solid-apexcharts": "^0.2.4",
     "solid-js": "^1.7.2",
+    "solid-styled-components": "^0.28.5",
     "vite": "^4.3.4",
     "vite-plugin-solid": "^2.7.0"
   }
