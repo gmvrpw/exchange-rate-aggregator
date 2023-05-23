@@ -1,7 +1,8 @@
 import { styled } from "solid-styled-components";
 
-const Name = styled.p`
-  font-weight: 800;
+const Price = styled.p`
+  margin: 0;
+  font-weight: 400;
 `;
 
-export default Name;
+export default Price;
