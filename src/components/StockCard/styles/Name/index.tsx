@@ -1,5 +1,9 @@
 import { styled } from "solid-styled-components";
 
-const Container = styled.div``;
+const Name = styled.h1`
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+`;
 
-export default Container;
+export default Name;

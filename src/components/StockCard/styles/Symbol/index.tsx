@@ -1,10 +1,8 @@
 import { styled } from "solid-styled-components";
 
-const Name = styled.h1`
-  margin: 0;
-  padding: 0;
-  font-size: 32px;
-  color: white;
+const Symbol = styled.span`
+  padding: 0 4px;
+  font-weight: 200;
 `;
 
-export default Name;
+export default Symbol;
