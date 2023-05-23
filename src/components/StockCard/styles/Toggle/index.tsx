@@ -1,9 +1,11 @@
 import { styled } from "solid-styled-components";
 
-const More = styled.button`
+const Toggle = styled.button`
+  width: 100%;
   margin: 0;
   border: none;
   padding: 4px 0;
+  text-align: left;
   background: none;
   color: white;
   font-family: "Inter", sans-serif;
@@ -12,4 +14,4 @@ const More = styled.button`
   cursor: pointer;
 `;
 
-export default More;
+export default Toggle;

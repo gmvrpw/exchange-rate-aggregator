@@ -7,7 +7,7 @@ const IndexPage = lazy(() => import("./page/Index"));
 const App: Component = () => {
   return (
     <Routes>
-      <Route path="/" component={IndexPage} />
+      <Route path="/*" component={IndexPage} />
     </Routes>
   );
 };

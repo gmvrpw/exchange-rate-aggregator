@@ -1,15 +1,15 @@
 import { render } from "solid-js/web";
 import { Router } from "@solidjs/router";
-import { ThemeProvider } from "solid-styled-components";
 
-import { GlobalStyles, theme } from "./styles";
+import { GlobalStyles } from "./styles";
+import ThemeProvider from "./contexts/theme/index";
 
 import App from "./App";
 
 render(
   () => (
     <Router>
-      <ThemeProvider theme={theme.light}>
+      <ThemeProvider>
         <App />
       </ThemeProvider>
       <GlobalStyles />

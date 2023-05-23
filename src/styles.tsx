@@ -1,4 +1,8 @@
-import { createGlobalStyles } from "solid-styled-components";
+import {
+  createGlobalStyles,
+  setup,
+  shouldForwardProp,
+} from "solid-styled-components";
 
 export const GlobalStyles = () => {
   const Styles = createGlobalStyles`
@@ -13,14 +17,76 @@ export const GlobalStyles = () => {
   return <Styles />;
 };
 
-const colors = {};
-
-const light = {};
-
-export const theme = {
-  light,
-};
+setup(
+  null,
+  shouldForwardProp((prop) => {
+    return prop !== "hidden";
+  })
+);
 
 declare module "solid-styled-components" {
-  export interface DefaultTheme {}
+  export interface DefaultTheme {
+    page: {
+      background: string;
+    };
+    favorite: {
+      modifiers: {
+        checked: {
+          color: string;
+        };
+      };
+    };
+    hotkeyTip: {
+      color: string;
+    };
+    market: {
+      color: string;
+    };
+    searchOverlay: {
+      background: string;
+    };
+    searchBar: {
+      icon: {
+        color: string;
+        modifiers: {
+          active: {
+            color: string;
+          };
+        };
+      };
+      input: {
+        color: string;
+        background: string;
+        boxShadow: string;
+        outline: string;
+        modifiers: {
+          searching: {
+            color: string;
+            boxShadow: string;
+            outline: string;
+          };
+        };
+        components: {
+          placeholder: {
+            color: string;
+          };
+          selection: {
+            color: string;
+            background: string;
+          };
+        };
+      };
+      tip: {
+        color: string;
+      };
+    };
+    stockRow: {
+      background: string;
+      color: string;
+    };
+    stockCard: {
+      background: string;
+      color: string;
+    };
+  }
 }
